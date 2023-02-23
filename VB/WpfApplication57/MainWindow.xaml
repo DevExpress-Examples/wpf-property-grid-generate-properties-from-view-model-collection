@@ -6,15 +6,24 @@
         x:Class="WpfApplication57.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Window.DataContext>
-        <local:MyViewModel/>
+        <local:ViewModel/>
     </Window.DataContext>
+    
     <Window.Resources>
-        <DataTemplate x:Key="propertyTemplate">
+        <DataTemplate x:Key="PropertyTemplate">
             <dxprg:PropertyDefinition Path="{Binding Name}"/>
         </DataTemplate>
+        <DataTemplate x:Key="CollectionTemplate">
+            <dxprg:CollectionDefinition Path="{Binding CollectionName}"/>
+        </DataTemplate>
+        <local:PropertyDefinitionTemplateSelector x:Key="PropertyDefinitionTemplateSelector"
+                                                  PropertyTemplate="{StaticResource PropertyTemplate}"
+                                                  CollectionTemplate="{StaticResource CollectionTemplate}"/>
     </Window.Resources>
-    <Grid>
-        <dxprg:PropertyGridControl Name="propertyGrid" ShowProperties="WithPropertyDefinitions" SelectedObject="{Binding SomeObject}" 
-                                   PropertyDefinitionsSource="{Binding Properties}" PropertyDefinitionTemplate="{StaticResource propertyTemplate}"/>
-    </Grid>
+
+    <dxprg:PropertyGridControl SelectedObject="{Binding EditObject}"
+                               PropertyDefinitionsSource="{Binding Properties}"
+                               PropertyDefinitionTemplateSelector="{StaticResource PropertyDefinitionTemplateSelector}"
+                               ShowProperties="WithPropertyDefinitions" 
+                               ExpandCategoriesWhenSelectedObjectChanged="True"/>
 </Window>
