@@ -3,17 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T156704)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Property Grid - Generate Properties From a View Model Collection
+
+This example demonstrates how to generate [Property Definitions](https://docs.devexpress.com/WPF/15521/controls-and-libraries/property-grid/property-definitions) and [Collection Definitions](https://docs.devexpress.com/WPF/15719/controls-and-libraries/property-grid/property-definitions/collection-definitions) based on a View Model collection.
+
+![image](https://user-images.githubusercontent.com/65009440/220949708-12849eba-d69d-41a6-a02d-2ff27422b16a.png)
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/WpfApplication57/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication57/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/WpfApplication57/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication57/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to: Generate Properties in PropertyGridControl From a Collection
 
+## Documentation
 
-<p>This example demonstrates how to create <a href="https://documentation.devexpress.com/#WPF/CustomDocument15521">Property Definitions</a> and <a href="https://documentation.devexpress.com/#WPF/CustomDocument15719">Collection Definitions</a> based on a data source collection. For this, you can utilize the following properties.<br><br>The <a href="https://documentation.devexpress.com/#WPF/DevExpressXpfPropertyGridPropertyGridControl_PropertyDefinitionsSourcetopic">PropertyDefinitionsSource</a> property can be bound to a collection of custom objects.<br><br>The <a href="https://documentation.devexpress.com/WPF/DevExpressXpfPropertyGridPropertyGridControl_PropertyDefinitionTemplatetopic.aspx">PropertyDefinitionTemplate</a>, <a href="https://documentation.devexpress.com/WPF/DevExpressXpfPropertyGridPropertyGridControl_PropertyDefinitionStyletopic.aspx">PropertyDefinitionStyle</a>, <a href="https://documentation.devexpress.com/WPF/DevExpressXpfPropertyGridPropertyGridControl_PropertyDefinitionTemplateSelectortopic.aspx">PropertyDefinitionTemplateSelector</a> properties are used to configure generated Property Definition objects. If the PropertyDefinitionsSource collection contains PropertyDefinition objects, the use of these properties is unnecessary.</p>
+* [Bind to a Collection of PropertyDefinitions](https://docs.devexpress.com/WPF/115668/controls-and-libraries/property-grid/property-definitions/binding-to-a-collection-of-propertydefinitions)
+* [PropertyDefinitionsSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.PropertyGrid.PropertyGridControl.PropertyDefinitionsSource)
+* [PropertyDefinitionTemplate](https://docs.devexpress.com/WPF/DevExpress.Xpf.PropertyGrid.PropertyGridControl.PropertyDefinitionTemplate)
+* [PropertyDefinitionTemplateSelector](https://docs.devexpress.com/WPF/DevExpress.Xpf.PropertyGrid.PropertyGridControl.PropertyDefinitionTemplateSelector)
+* [Customize Properties](https://docs.devexpress.com/WPF/401044/controls-and-libraries/property-grid/property-definitions/customize-properties)
 
-<br/>
+## More Examples
 
-
+* [WPF Property Grid - Apply Data Annotation Attributes](https://github.com/DevExpress-Examples/wpf-property-grid-apply-data-annotation-attributes)
